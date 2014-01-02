@@ -1,7 +1,7 @@
 NewRelic & Clojure
 ==================
 
-This app demonstrates a regression introduced in the New Relic Java notifier version 3.2.0.  It causes no data to be reported to the dashboard.
+This app demonstrates a regression in the New Relic Java notifier which causes no data to be reported to the dashboard.  This issue was introduced in version 3.2.0, and tests indicate it still exists in the most recent version 3.2.3.
 
 Configuration
 -------------
@@ -31,4 +31,13 @@ Check out the v3.2.0 branch.
     wget localhost:8000
 
 You should get a successful response, but data will not be reported to new relic for this request.
+
+To test other versions of the notifier, edit project.clj and change the version number, ie:
+
+    :java-agents [[com.newrelic.agent.java/newrelic-agent "3.2.3"]]
+
+What caused the regression?
+---------------------------
+
+Dunno.  This is something New Relic will need to look into.
 

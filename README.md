@@ -10,8 +10,10 @@ Configuration
 2. Create a test app with newrelic.
 3. Set the appropriate environment variables:
 
-    export NEW_RELIC_APP_NAME=clojure-test-zo58
-    export NEW_RELIC_LICENSE_KEY=325cea33a1027bd260b58d2de3fe49b04ee9ab67
+```bash
+export NEW_RELIC_APP_NAME=clojure-test-zo58
+export NEW_RELIC_LICENSE_KEY=325cea33a1027bd260b58d2de3fe49b04ee9ab67
+```
 
 To Reproduce
 ------------

@@ -2,7 +2,7 @@
   (:require [ring.adapter.jetty :as ring]))
 
 (def app (fn [request]
-  (throw (Exception. "New relic should see me!"))))
+  {:status 200 :body "New relic should see this!"}))
 
 (ring/run-jetty app {:port 8000})
 

@@ -22,7 +22,7 @@ Check out the v3.1.1 branch.
     lein run
     wget localhost:8000
 
-A 500 error will be returned, and this web request should have been reported successfully to New Relic.
+You should get a successful response, and new relic should report the request to the dashboard.
 
 Check out the v3.2.0 branch.
 
@@ -30,7 +30,5 @@ Check out the v3.2.0 branch.
     lein run
     wget localhost:8000
 
-A 500 error will be returned, but data will no longer be reported.
-
-It's not just errors, that's just an easy way to demo the problem.  No data is reported to New Relic at all.
+You should get a successful response, but data will not be reported to new relic for this request.
 
